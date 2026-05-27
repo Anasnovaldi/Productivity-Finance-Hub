@@ -4,6 +4,7 @@
 
 body{
     margin: 0px;
+    background-color: #f3f6f9;
 }
 
 header{
@@ -13,9 +14,11 @@ header{
     margin: 0 0 20px 0;
 }
 
-main{
-    width: 650px;
-    margin: 0 auto 0 auto;
+main {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 #path-tabungan{
@@ -36,13 +39,11 @@ main{
 }
 
 #card-digital{
-    border-top: 5px rgb(0, 174, 255) solid;
-    border-bottom: 5px rgb(0, 174, 255) solid;
+    border-top: 5px #4361ee solid;
 }
 
 #card-cash{
-    border-top: 5px rgb(0, 255, 0) solid;
-    border-bottom: 5px rgb(0, 255, 0) solid;
+    border-top: 5px #10b981 solid;
 }
 
 #path-form{
@@ -67,20 +68,22 @@ input, select, #btn-tabung{
     outline: none; 
 }
 
-input:hover, select:hover{
-    background-color: rgb(222, 222, 222);
+input:focus, select:focus{
+    border-color: #4361ee;
 }
 
 #btn-tabung{
-    background-color: greenyellow;
-    color: black; 
+    color: white; 
     font-weight: 600;
     font-size: 15px; 
     border-radius: 10px;
+    background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+    transition: opacity 0.2s ease, transform 0.1s ease;
 }
 
 #btn-tabung:hover{
-    background-color: rgb(141, 234, 0);
+    opacity: 0.9;
+    transform: scale(0.98);
 }
 
 #path-desc{

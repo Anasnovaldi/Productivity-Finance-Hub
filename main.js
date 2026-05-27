@@ -39,7 +39,7 @@ button_tabung.addEventListener("click", function(){
                 nominal_input.value = "";
                 deskripsi_input.value = "";
 
-                itembaru.style.borderLeft = "5px solid rgb(0, 255, 0)";
+                itembaru.style.borderLeft = "5px solid #10b981";
             }
 
             else{
@@ -61,7 +61,7 @@ button_tabung.addEventListener("click", function(){
                 nominal_input.value = "";
                 deskripsi_input.value = "";
 
-                itembaru.style.borderLeft = "5px solid rgb(0, 174, 255)";
+                itembaru.style.borderLeft = "5px solid #4361ee";
             }
         }
     }
