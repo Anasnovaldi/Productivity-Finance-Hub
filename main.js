@@ -21,43 +21,47 @@ button_tabung.addEventListener("click", function(){
             alert("Nominal tidak boleh 0 atau kurang dari 0");
         }
         else{
-            if(kategori_input === "cash"){
+            if(kategori_input.value === "cash"){
                 const nominal_rupiah = Number(nominal_input.value);
                 const objekdata = {
-                    Nominal = nominal_rupiah,
-                    Deskripsi = deskripsi_input.value,
-                    Kategori = kategori_input.value
+                    Nominal : nominal_rupiah,
+                    Deskripsi : deskripsi_input.value,
+                    Kategori : kategori_input.value
                 }
                 arr_cash.push(objekdata);
                 total_cash.innerText = arr_cash.reduce(function(total, danasekarang){
-                    return total + danasekarang;
-                }, 0);
+                    return total + danasekarang.Nominal;
+                }, 0).toLocaleString();
 
                 const itembaru = document.createElement("li");
                 itembaru.innerText = `Nominal Rupiah Rp.${objekdata.Nominal} dalam bentuk cash berhasil ditambahkan dengan deskripsi ${objekdata.Deskripsi}`;
                 list_deskripsi.append(itembaru);
                 nominal_input.value = "";
                 deskripsi_input.value = "";
+
+                itembaru.style.borderLeft = "5px solid rgb(0, 255, 0)";
             }
 
             else{
                 const nominal_rupiah = Number(nominal_input.value);
                 const objekdata = {
-                    Nominal = nominal_rupiah,
-                    Deskripsi = deskripsi_input.value,
-                    Kategori = kategori_input.value
+                    Nominal : nominal_rupiah,
+                    Deskripsi : deskripsi_input.value,
+                    Kategori : kategori_input.value
                 }
                 arr_digital.push(objekdata);
                 total_digital.innerText = arr_digital.reduce(function(total, danasekarang){
-                    return total + danasekarang;
-                }, 0);
+                    return total + danasekarang.Nominal;
+                }, 0).toLocaleString();
 
                 const itembaru = document.createElement("li");
                 itembaru.innerText = `Nominal Rupiah Rp.${objekdata.Nominal} dalam bentuk digital berhasil ditambahkan dengan deskripsi ${objekdata.Deskripsi}`;
-                
+
                 list_deskripsi.append(itembaru);
                 nominal_input.value = "";
                 deskripsi_input.value = "";
+
+                itembaru.style.borderLeft = "5px solid rgb(0, 174, 255)";
             }
         }
     }
