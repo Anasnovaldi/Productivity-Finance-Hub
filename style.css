@@ -1,0 +1,103 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 2px 10px rgb(180, 180, 180);
+    margin: 0 0 20px 0;
+}
+
+main{
+    width: 650px;
+    margin: 0 auto 0 auto;
+}
+
+#path-tabungan{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+#card-digital, #card-cash{
+    margin: 5px auto 5px auto;
+    height: 120px;
+    width: 290px;
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+#path-form{
+    margin: 20px auto 0 auto;
+    height: 210px;
+    width: 590px;
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+input, select, #btn-tabung{ 
+    padding: 12px; 
+    border-radius: 6px; 
+    border: 1px solid #ddd; 
+    outline: none; 
+}
+
+#btn-tabung{
+    background: greenyellow; 
+    color: black; 
+    font-weight: 600;
+    font-size: 15px; 
+    border-radius: 10px;
+}
+
+#path-desc{
+    margin: 20px auto 0 auto;
+    height: 210px;
+    width: 590px;
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#path-desc>p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;   
+}
+
+li { 
+    list-style: none; 
+    margin-bottom: 10px; 
+    padding: 15px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 5px yellow solid;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+li:hover{
+    background-color: rgb(222, 222, 222);
+}
