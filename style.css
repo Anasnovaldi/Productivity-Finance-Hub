@@ -48,7 +48,7 @@ main {
 
 #path-form{
     margin: 20px auto 0 auto;
-    height: 210px;
+    min-height: 210px;
     width: 590px;
     box-shadow: 0px 0px 10px rgb(180, 180, 180);
     border-radius: 15px;
@@ -88,7 +88,7 @@ input:focus, select:focus{
 
 #path-desc{
     margin: 20px auto 0 auto;
-    height: 210px;
+    min-height: 210px;
     width: 590px;
     box-shadow: 0px 0px 10px rgb(180, 180, 180);
     border-radius: 15px;
