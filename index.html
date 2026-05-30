@@ -3,45 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabungan-tracker</title>
+    <title>Portofolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div id="title">
-            <p>Tabungan-tracker</p>
+        <div id="navbar">
+            <a id="pagemoneyvault" href="moneyvault-program/homepage.html">
+                <p>Money Tracker</p>
+            </a>
+            <a id="pagetodolist" href="todolist-program/homepage-todo.html">
+                <p>Todo-List</p>
+            </a>
         </div>
     </header>
+
     <main>
-        <div id="path-tabungan">
-            <div id="card-digital">
-                Total Dalam Digital <br>Rp. <span id="total-digital">0</span>
+        <div id="card-aboutme">
+            <h1>About Project</h1>
+            <div id="description">
+                <p>Hallo kawan !! saat ini saya sedang belajar web developing, sekarang saya memiliki dua projects sederhana dalam satu program ini.</p>
+                <p>1. Money Tracker : Berfungsi untuk mencatat tabungan pribadi dalam bentuk cash maupun digital dengan deskripsi sederhana jika kita berhasil mencatat keprogramnya</p>
+                <p>2. Todo-List : Berfungsi untuk mencatat setiap tugas yang akan dikerjakan, dalam program ini kita dalam mengedit maupun menghapus list</p>
+                <p><< NOTED!! Belum ada fungsi untuk simpan didatabase langsung. >></p>
             </div>
-            <div id="card-cash">
-                Total Dalam Cash <br>Rp. <span id="total-cash">0</span>
-            </div>
-        </div>
-
-        <div id="path-form">
-            <input type="number" id="nominal-input" placeholder="Silahkan Isi Nominal Disini"> 
-            <input type="text" id="deskripsi-input" placeholder="Silahkan Tambahkan Deskripsi">
-            <select id="kategori" name="kategori">
-                <option value="cash">Cash</option>
-                <option value="digital">Digital</option>
-            </select>
-            <button id="btn-tabung">Tabung</button>
-        </div>
-
-        <div id="path-desc">
-            <p>Deskripsi Tambahan :</p>
-            <ul id="list-desc">
-
-            </ul>
         </div>
     </main>
+
     <footer>
-        &copy; intern man
+
     </footer>
-    <script src="main.js"></script>
+
 </body>
 </html>

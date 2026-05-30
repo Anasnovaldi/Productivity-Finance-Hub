@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabungan-tracker</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <div id="title">
+            <p>Tabungan-tracker</p>
+        </div>
+    </header>
+    <main>
+        <div id="path-tabungan">
+            <div id="card-digital">
+                Total Dalam Digital <br>Rp. <span id="total-digital">0</span>
+            </div>
+            <div id="card-cash">
+                Total Dalam Cash <br>Rp. <span id="total-cash">0</span>
+            </div>
+        </div>
+
+        <div id="path-form">
+            <input type="number" id="nominal-input" placeholder="Silahkan Isi Nominal Disini"> 
+            <input type="text" id="deskripsi-input" placeholder="Silahkan Tambahkan Deskripsi">
+            <select id="kategori" name="kategori">
+                <option value="cash">Cash</option>
+                <option value="digital">Digital</option>
+            </select>
+            <button id="btn-tabung">Tabung</button>
+        </div>
+
+        <div id="path-desc">
+            <p>Deskripsi Tambahan :</p>
+            <ul id="list-desc">
+
+            </ul>
+        </div>
+    </main>
+    <footer>
+        &copy; intern man
+    </footer>
+    <script src="homepage.js"></script>
+</body>
+</html>
