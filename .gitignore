@@ -1,0 +1,11 @@
+# Mengabaikan file konfigurasi sistem operasi (biasanya otomatis muncul tersembunyi)
+.DS_Store
+Thumbs.db
+
+# Mengabaikan file lingkungan/rahasia jika nanti kamu menggunakan API Key
+.env
+.env.local
+
+# Mengabaikan folder unduhan pustaka pihak ketiga (jika nanti belajar Node.js)
+node_modules/
+dist/
