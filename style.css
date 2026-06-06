@@ -56,3 +56,26 @@ a{
 h1{
     text-align: center;
 }
+
+#datetime{
+    margin: 60px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+#hours, #minute, #second{
+    border: 1px black solid;
+    box-shadow: 5px 5px 1px black;
+    width: 80px;
+    height: 80px;
+    color: black;
+    text-align: center;
+    font-size: 60px;
+}
+
+#double-point1, #double-point2{
+    font-size: 40px;
+}
